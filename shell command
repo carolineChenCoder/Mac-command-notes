@@ -1,0 +1,19 @@
+Mac install basic command
+1. brew: ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"   {need input password}=>brew help
+2.wget: brew install wget
+3.oh my zsh: wget --no-check-certificate http://install.ohmyz.sh -O - | sh
+4.shell => zsh: chsh -s /bin/zsh
+5.set some alias for function by:
+   alias aa=aa1
+6. change current directory to absolute path:
+	*vi ~/.oh-my-zsh/themes/robbyrussell.zsh-theme
+	*PROMPT='${ret_status}%{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} %  %{$reset_color%}'
+	*PROMPT='${ret_status}%{$fg_bold[green]%}%p %{$fg[cyan]%}%d %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} %  %{$reset_color%}'
+7. autojump
+	brew install autojump
+	plugins=(git osx autojump)
+	[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+8. look up git abbress
+	~/.oh-my-zsh/plugins/git/git.plugin.zsh
+
+
